@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Xhantorz/XhantorzSite/issues"
   },
-  "homepage": "https://github.com/Xhantorz/XhantorzSite#readme"
+  "homepage": "https://github.com/Xhantorz/XhantorzSite#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  }
 }
