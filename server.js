@@ -9,6 +9,7 @@ app.use(logger('dev'));
 // set up the template engine
 app.set('views', './views');
 app.set('css', './css');
+app.set('js', './js');
 app.set('view engine', 'pug');
 
 // GET response for '/'
