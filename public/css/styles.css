@@ -1,3 +1,4 @@
-body{
-  background-color: gray;
+
+.hero{
+  background-image: url(../img/planet.jpg);
 }
