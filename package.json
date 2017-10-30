@@ -1,0 +1,19 @@
+{
+  "name": "xhantorzsite",
+  "version": "1.0.0",
+  "description": "Test 3",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xhantorz/XhantorzSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xhantorz/XhantorzSite/issues"
+  },
+  "homepage": "https://github.com/Xhantorz/XhantorzSite#readme"
+}
