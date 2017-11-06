@@ -1,25 +1,21 @@
-// require all dependencies
-var express = require('express');
-var logger = require('morgan');
-var path = require('path');
-var app = express();
-var bodyParser = require("body-parser");
+const pug = require('pug');
+const path = require('path');
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 3000;
 
-// add logging and static middleware to express
-app.use(logger('dev'));
-
-// set up the template engine
-app.set('views', './views');
+// Set views path
+app.set('views', path.join(__dirname, 'views'));
+// Set public path
+app.use(express.static(path.join(__dirname, 'public')));
+// Set pug as view engine
 app.set('view engine', 'pug');
 
-app.use(express.static(path.join(__dirname, './public')));
-
-// GET response for '/'
-app.get('/', function (req, res, next) {
-  res.render('index');
+// Player's index
+app.get('/', (req, res) => {
+    res.render('index');
 });
-
-// start up the server
-app.listen(process.env.PORT || 3000, function () {
-    console.log('Listening on http://localhost:' + (process.env.PORT || 3000));
+// Start server
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}`);
 });

@@ -4,9 +4,9 @@
   "description": "Test 3",
   "main": "server.js",
   "scripts": {
-    "watch": "nodemon server.js -e js,pug", 
+    "watch": "nodemon server.js -e js,pug",
     "start": "node server.js"
-},
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Xhantorz/XhantorzSite.git"
@@ -19,6 +19,7 @@
   "homepage": "https://github.com/Xhantorz/XhantorzSite#readme",
   "dependencies": {
     "express": "^4.16.2",
-    "morgan": "^1.9.0"
+    "morgan": "^1.9.0",
+    "pug": "^2.0.0-rc.4"
   }
 }
